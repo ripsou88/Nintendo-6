@@ -5,8 +5,6 @@ public class Jeu {
 	private String titre;
 	private Console console;
 	
-	
-	
 	public Jeu(String titre, Console console) {
 		this.titre = titre;
 		this.console = console;
@@ -17,14 +15,10 @@ public class Jeu {
 	public String getTitre() {
 		return titre;
 	}
-
-
-
+	
 	public void setTitre(String titre) {
 		this.titre = titre;
 	}
-
-
 
 	public Console getConsole() {
 		return console;
