@@ -1,5 +1,8 @@
 package nintendo.test;
 
+import nintendo.model.Adresse;
+import nintendo.model.Boutique;
+import nintendo.model.Client;
 import nintendo.model.Console;
 
 public class Test {
@@ -11,6 +14,11 @@ public class Test {
 		Console nintendo2 = new Console("Switch");
 		Console sony2 = new Console("PSP");
 		
+		Adresse adresse = new Adresse(139, "rue Vauqelin", "Paris");
+		Boutique chezEric = new Boutique("Chez Eric", adresse);
+		
+		Client samus = new Client("Sans Armure", "Samus");
+		Client link = new Client("Cartoon", "Link");
 	}
 
 }
