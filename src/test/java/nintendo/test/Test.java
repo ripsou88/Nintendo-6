@@ -3,16 +3,20 @@ package nintendo.test;
 import nintendo.model.Adresse;
 import nintendo.model.Boutique;
 import nintendo.model.Client;
+import nintendo.model.Salon;
+import nintendo.model.Portable;
+import nintendo.model.Hybride;
 import nintendo.model.Console;
+
 
 public class Test {
 
 	public static void main(String[] args) {
-		Console sony1 = new Console("PlayStation 5");
-		Console nintendo1 = new Console("Wii");
-		Console microsoft1 = new Console("XBox One");
-		Console nintendo2 = new Console("Switch");
-		Console sony2 = new Console("PSP");
+		Console sony1 = new Salon("PlayStation 5");
+		Console nintendo1 = new Salon("Wii");
+		Console microsoft1 = new Salon("XBox One");
+		Console nintendo2 = new Hybride("Switch");
+		Console sony2 = new Portable("PSP");
 		
 		Adresse adresse = new Adresse(139, "rue Vauqelin", "Paris");
 		Boutique chezEric = new Boutique("Chez Eric", adresse);
