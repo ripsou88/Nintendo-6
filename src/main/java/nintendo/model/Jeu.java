@@ -4,10 +4,13 @@ public class Jeu {
 
 	private String titre;
 	private Console console;
-	
-	public Jeu(String titre, Console console) {
+	private Boutique boutique;
+
+	public Jeu(String titre, Console console, Boutique boutique) {
+		super();
 		this.titre = titre;
 		this.console = console;
+		this.boutique = boutique;
 	}
 
 
@@ -34,7 +37,7 @@ public class Jeu {
 
 	@Override
 	public String toString() {
-		return "Jeu [titre=" + titre + ", console=" + console + "]";
+		return "Jeu [titre=" + titre + ", console=" + console + ", boutique=" + boutique + "]";
 	}
 	
 	
